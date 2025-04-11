@@ -119,7 +119,7 @@
                         android:layout_height="60dp"
                         android:background="@color/light_gray"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_image_placeholder"
+                        android:src="@drawable/lean_meats_image"
                         android:layout_marginEnd="16dp" />
                     <LinearLayout
                         android:layout_width="0dp"
@@ -160,7 +160,7 @@
                         android:layout_height="60dp"
                         android:background="@color/light_gray"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_image_placeholder"
+                        android:src="@drawable/kibble_image"
                         android:layout_marginEnd="16dp" />
                     <LinearLayout
                         android:layout_width="0dp"
@@ -318,22 +318,6 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_home" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/profileButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:background="?selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:focusable="true">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:background="@drawable/circle_placeholder"
-                android:clipToOutline="true" />
         </LinearLayout>
 
     </LinearLayout>

@@ -20,7 +20,7 @@
             android:id="@+id/profileHomeButton"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:background="@drawable/circle_placeholder"
+            android:background="@drawable/profile_image"
             android:clipToOutline="true"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -132,11 +132,17 @@
                 android:focusable="true"
                 android:onClick="onCategoryListClicked"
                 android:tag="Food">
-                <View
+                <LinearLayout
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@drawable/circle_placeholder"
-                    android:clipToOutline="true" />
+                    android:background="@drawable/circle_border_placeholder"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/ic_petfood" />
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -158,11 +164,17 @@
                 android:focusable="true"
                 android:onClick="onCategoryListClicked"
                 android:tag="Accessories">
-                <View
+                <LinearLayout
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@drawable/circle_placeholder"
-                    android:clipToOutline="true" />
+                    android:background="@drawable/circle_border_placeholder"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_accesories" />
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -184,11 +196,17 @@
                 android:focusable="true"
                 android:onClick="onCategoryListClicked"
                 android:tag="Toys">
-                <View
+                <LinearLayout
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@drawable/circle_placeholder"
-                    android:clipToOutline="true" />
+                    android:background="@drawable/circle_border_placeholder"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_toys" />
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -209,11 +227,17 @@
                 android:focusable="true"
                 android:onClick="onCategoryListClicked"
                 android:tag="Pup">
-                <View
+                <LinearLayout
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@drawable/circle_placeholder"
-                    android:clipToOutline="true" />
+                    android:background="@drawable/circle_border_placeholder"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_pup" />
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -268,13 +292,14 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="onProductClicked"
-                android:tag="cooked_lean_meats">
+                android:tag="cooked_lean_meats"
+                android:background="@drawable/square_border_placeholder">
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:background="@color/light_gray"
                     android:scaleType="centerInside"
-                    android:src="@drawable/ic_image_placeholder" />
+                    android:src="@drawable/lean_meats_image" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -308,13 +333,14 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="onProductClicked"
-                android:tag="high_quality_kibble">
+                android:tag="high_quality_kibble"
+                android:background="@drawable/square_border_placeholder">
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:background="@color/light_gray"
                     android:scaleType="centerInside"
-                    android:src="@drawable/ic_image_placeholder" />
+                    android:src="@drawable/kibble_image" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -346,20 +372,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:background="?selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:focusable="true">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_home" />
-        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/cartButton"

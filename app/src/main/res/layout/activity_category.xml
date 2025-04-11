@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="64dp"
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/ic_arrow_back"
@@ -27,6 +27,7 @@
         android:text="Foods"
         android:textSize="36sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/backButtonCategory"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    app:cardCornerRadius="8dp">
+                    android:background="@drawable/square_border_placeholder">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -73,14 +74,15 @@
                         android:onClick="onProductClicked"
                         android:orientation="vertical"
                         android:padding="8dp"
-                        android:tag="cooked_lean_meats">
+                        android:tag="cooked_lean_meats"
+                        android:background="@drawable/square_border_placeholder">
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:background="@color/light_gray"
                             android:scaleType="centerInside"
-                            android:src="@drawable/ic_image_placeholder" />
+                            android:src="@drawable/lean_meats_image" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -118,14 +120,15 @@
                         android:onClick="onProductClicked"
                         android:orientation="vertical"
                         android:padding="8dp"
-                        android:tag="high_quality_kibble">
+                        android:tag="high_quality_kibble"
+                        android:background="@drawable/square_border_placeholder">
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:background="@color/light_gray"
                             android:scaleType="centerInside"
-                            android:src="@drawable/ic_image_placeholder" />
+                            android:src="@drawable/kibble_image" />
 
                         <TextView
                             android:layout_width="wrap_content"

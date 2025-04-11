@@ -14,6 +14,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var editTextLoginPassword: EditText
     private lateinit var buttonLogin: Button
     private lateinit var textViewRegisterLink: TextView
+    private lateinit var textViewGuestLink : TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,9 +26,16 @@ class LoginActivity : AppCompatActivity() {
         editTextLoginPassword = findViewById(R.id.editTextLoginPassword)
         buttonLogin = findViewById(R.id.buttonLogin)
         textViewRegisterLink = findViewById(R.id.textViewRegisterLink)
+        textViewGuestLink = findViewById(R.id.textViewGuestLink)
 
         textViewRegisterLink.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
+        textViewGuestLink.setOnClickListener {
+            val intent = Intent(this, HomePageActivity::class.java)
+            Toast.makeText(this, "Logged in as Guest", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
 

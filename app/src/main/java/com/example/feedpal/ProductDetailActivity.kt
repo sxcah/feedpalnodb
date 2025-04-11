@@ -16,6 +16,7 @@ class ProductDetailsActivity : AppCompatActivity() {
     private lateinit var ratingPercentTextView: TextView
     private lateinit var backButton: ImageView
     private lateinit var addToCartButton: Button
+    private lateinit var productImage: ImageView
     private var isItemInCart = false
     // Add other views as needed
 
@@ -30,6 +31,7 @@ class ProductDetailsActivity : AppCompatActivity() {
         ratingPercentTextView = findViewById(R.id.ratingPercentTextView)
         addToCartButton = findViewById(R.id.addToCartButton)
         backButton = findViewById(R.id.backButton)
+        productImage = findViewById(R.id.productImage)
         // Initialize other views
 
         // Set OnClickListener for the back button
@@ -64,6 +66,7 @@ class ProductDetailsActivity : AppCompatActivity() {
                 ratingPercentTextView.text = "97%"
                 productNameTextView.text = "Cooked Lean Meats"
                 descriptionTextView.text = "Plain, cooked chicken, turkey, or lean beef provide excellent protein. Ensure they are boneless and unseasoned to avoid digestive upset."
+                productImage.setImageResource(R.drawable.lean_meats_image)
                 // Set other details like price, rating, image, etc.
             }
             "high_quality_kibble" -> {
@@ -72,6 +75,7 @@ class ProductDetailsActivity : AppCompatActivity() {
                 ratingPercentTextView.text = "96%"
                 productNameTextView.text = "High Quality Kibble"
                 descriptionTextView.text = "A premium blend of essential nutrients for your dog's optimal health and energy."
+                productImage.setImageResource(R.drawable.kibble_image)
                 // Set other details for kibble
             }
             // Add cases for other product IDs
